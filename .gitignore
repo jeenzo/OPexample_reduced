@@ -1,0 +1,10 @@
+build/
+out/
+err/
+*.err
+*.out
+slurm/*.sh
+data/results/benchmarks*/
+data/results/retail*/
+data/results/ecomm*/
+data/instances/resA2_input_batches/*

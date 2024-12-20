@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"33f6e75ccfe319f6","type":"text","text":"*Inputs* `InputData`\n- Wh params\n- Location matrix\n- Orders\n- Task times\n- Task penibility\n- Worker data","x":-240,"y":-500,"width":250,"height":260,"color":"5"},
+		{"id":"e6cb786c8c9be232","type":"file","file":"data/generate_inputs.ipynb","x":-560,"y":-395,"width":200,"height":50},
+		{"id":"884ea70f4853f1ac","x":-240,"y":-200,"width":250,"height":60,"color":"2","type":"text","text":"*Routing* (S-shape)"},
+		{"id":"41399df1274a43d1","x":-240,"y":-100,"width":250,"height":180,"color":"6","type":"text","text":"*Fatigue*\n- Fatigue increment\n- Time increment\n- Recovery\n- Time to rest"},
+		{"id":"7c916bee3823c383","x":-580,"y":-35,"width":240,"height":50,"type":"file","file":"docs/fatigue_functions_and_plots.nb"},
+		{"id":"3f2572d226215c8c","type":"text","text":"**Problem instance** `PI`\n- For each `Worker`:\n\t1. Initialize batches (max items per batch)\n\t2. Compute routes\n\t3. Compute fatigue development\n","x":160,"y":-285,"width":400,"height":230,"color":"4"},
+		{"id":"c5f8e294abba30d4","x":260,"y":-460,"width":200,"height":50,"type":"file","file":"data/warehouse_plot.ipynb"}
+	],
+	"edges":[
+		{"id":"3816d88e39cb059a","fromNode":"e6cb786c8c9be232","fromSide":"right","toNode":"33f6e75ccfe319f6","toSide":"left"},
+		{"id":"a88ac1292a1bf5fa","fromNode":"7c916bee3823c383","fromSide":"right","toNode":"41399df1274a43d1","toSide":"left"},
+		{"id":"397ab3ed3c14dd24","fromNode":"33f6e75ccfe319f6","fromSide":"right","toNode":"3f2572d226215c8c","toSide":"left"},
+		{"id":"c74237c13982f924","fromNode":"884ea70f4853f1ac","fromSide":"right","toNode":"3f2572d226215c8c","toSide":"left"},
+		{"id":"4493ad4c8008e9e4","fromNode":"41399df1274a43d1","fromSide":"right","toNode":"3f2572d226215c8c","toSide":"left"}
+	]
+}
